@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>D3ofThrones</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/svg.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type='text/javascript' src="js/lib/d3.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/graphDisplay.js"></script>
+	<script type="text/javascript" src="js/bvToRgb.js"></script>
+	<script type="text/javascript" src="js/graphDisplay.js"></script>
+	<script type="text/javascript" src="js/animate.js"></script>
+</head>
+	<body>
+
+		<nav>
+			<article id="nbrelations_article">
+
+				<label for="nbrelations">Pourcentage</label><br/>
+				<input type="number" name="nbrelations" id='nbrelations' class="filter" min="0"  max="100"/>
+			</article>
+			<div id="characterList">
+			</div>
+		</nav>
+		<div id="cash2"><img class="fleche" src="fleche.png"></div>
+		<div id="display">
+			<svg></svg>
+			<div id="slidder">
+				<input type="range" step="1" id="range" value=0 name='range'>
+				<div id="arrow-left"></div>
+				<span id="range-slider_value"><p id="range-slider_p"></p></span>
+			</div>
+
+		</div>
+	</body>
+</html>

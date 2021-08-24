@@ -1,0 +1,108 @@
+.mainSelection{
+	animation-duration: 1000ms;
+   animation-name: blink;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+	 stroke-width: 8px;
+}@keyframes blink {
+   from {
+	 	 stroke-width: 1px;
+   }
+   to {
+	 	 stroke-width: 8px;
+   }
+ }
+.selected{
+	opacity: 1;
+}
+.unselected{
+	opacity: 0.25;
+}
+.link {
+	fill: none;
+  /*stroke: #666;*/
+	/*stroke-width: 1px;*/
+}
+
+
+circle.normal {
+  /*fill: #ccc;*/
+}
+
+circle.searched{
+	stroke-width: 8px;
+	stroke: #FF002E;
+}
+
+#licensing {
+  fill: green;
+}
+
+.link{
+  /*stroke-width: 2px;*/
+}
+
+.link.licensing {
+  stroke: green;
+}
+.link.suit {
+  /*stroke: black;*/
+}
+
+
+circle {
+  /*fill: #ccc;*/
+  stroke: #333;
+  stroke-width: .5px;
+  transition-duration: 0.5s;
+}
+
+circle:hover{
+  stroke-width: 15px;
+  cursor: pointer;
+}
+
+.hoveredCircle{
+  stroke-width: 15px;
+  cursor: pointer;
+	opacity: 1;
+}
+
+.deadNode{
+	opacity: 0;
+}
+
+.deadLinks{
+	opacity: 0;
+}
+
+text {
+  font: 10px sans-serif;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+.unselectedButton{
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: auto;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	/*font-size: 16px;*/
+}
+
+.selectedButton{
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+	background-color: #f44336; /* Green */
+	border: none;
+	color: white;
+	padding: auto;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	/*font-size: 16px;*/
+}
